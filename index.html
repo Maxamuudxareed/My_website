@@ -1,30 +1,82 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="so">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Your description here">
-    <title>Your Title Here</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
-    <script src="script.js" defer></script> <!-- Link to your JavaScript file -->
+    <title>Foolaad | Teknoolojiyada Soomaaliya</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <header>
-        <h1>Welcome to My Website</h1>
-        <button id="colorButton">Change Background Color</button>
-    </header>
-    <nav>
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Services</a>
-        <a href="#">Contact</a>
+    <!-- Navigation -->
+    <nav class="nav-somali">
+        <div class="logo">
+            <i class="fas fa-microchip"></i>
+            <h1>FOOLAAD</h1>
+        </div>
+        
+        <ul class="nav-links">
+            <li><a href="#home">Bogga Hore</a></li>
+            <li><a href="#about">Warbixin</a></li>
+            <li><a href="#posts">Maqaallo</a></li>
+            <li><a href="#contact">Xidhiidh</a></li>
+        </ul>
+        
+        <div class="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
     </nav>
-    <main>
-        <h2>Main Content</h2>
-        <p>This is where the main content of your webpage goes.</p>
-    </main>
-    <footer>
-        <p>&copy; 2024 Your Name. All rights reserved.</p>
+
+    <!-- Featured Section -->
+    <section class="featured" id="home">
+        <div class="featured-content">
+            <h2>Teknoolojiyada Mustaqbalka <span>Soomaaliya</span></h2>
+            <p>Ogow horumarka ugu dambeeya AI, Blockchain, iyo teknoolojiyada kale</p>
+        </div>
+    </section>
+
+    <!-- Blog Posts Grid -->
+    <section class="posts-grid" id="posts">
+        <article class="post-card">
+            <img src="assets/ai.jpg" alt="AI">
+            <h3>AI: Aabaha Mustaqbalka?</h3>
+            <p class="post-meta">Axmed Xasan | Juun 2024</p>
+            <p>Sida AI ugu hagaajin karo warshadaha iyo waxbarashada Soomaaliya...</p>
+            <a href="#" class="read-more">Akhri <i class="fas fa-arrow-right"></i></a>
+        </article>
+
+        <!-- Add more post cards -->
+    </section>
+
+    <!-- Newsletter Form -->
+    <section class="newsletter">
+        <h2>Isdiiwaangeli Warbixinada</h2>
+        <form id="newsletterForm">
+            <input type="email" placeholder="Emailkaaga" required>
+            <button type="submit">Isdiiwaangeli <i class="fas fa-paper-plane"></i></button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="somali-footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Xidhiidh</h4>
+                <p>info@foolaad.so</p>
+                <p>+252 61 1234567</p>
+            </div>
+            <div class="footer-section">
+                <h4>Nala Soco</h4>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+        <p class="copyright">&copy; 2024 Foolaad. Dhammaan Xuquuqaha Way Dhawrsan Yihiin</p>
     </footer>
+
+    <script src="scripts/script.js"></script>
 </body>
 </html>
